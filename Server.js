@@ -1,1 +1,0 @@
-const harrison = 23;
