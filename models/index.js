@@ -1,3 +1,13 @@
-const express = require('express');
-const router = express.Router();
-const db = require('../db');
+const User = require('./User');
+const Chirp = require('./Chirp');
+
+User.hasMany(Chirp, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+
+Chirp.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+module.exports = { User, Chirp };
