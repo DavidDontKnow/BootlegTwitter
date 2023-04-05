@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "content": "First chirp!",
+        "user_id": 1
+    },
+    {
+        "id": 2,
+        "content": "Second chirp!",
+        "user_id": 2
+    },
+    {
+        "id": 3,
+        "content": "Third chirp!",
+        "user_id": 3
+    },
+    {
+        "id": 4,
+        "content": "Fourth chirp!",
+        "user_id": 4
+    }
+
+]
