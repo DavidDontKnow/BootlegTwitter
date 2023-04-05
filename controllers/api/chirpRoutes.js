@@ -32,3 +32,5 @@ router.post('/chirps', withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+module.exports = router;
