@@ -13,7 +13,7 @@ router.get('/', withAuth, async (req, res) => {
     res.status(200);
   } catch (err) {
     console.log(err);
-    res.redirect('login');
+    res.redirect('/login');
   }
 });
 
