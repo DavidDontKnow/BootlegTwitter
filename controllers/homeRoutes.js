@@ -5,9 +5,7 @@ const router = express.Router();
 router.get('/', async (req, res) => {
   try {
     // homepage should have all chirps and navbar links
-    res.render('homepage', {
-      logged_in: req.session.logged_in,
-    });
+    res.render('homepage');
     res.status(200);
   } catch (err) {
     res.status(500).json(err);
