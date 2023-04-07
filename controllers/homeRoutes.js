@@ -43,7 +43,7 @@ router.get('/signup', (req, res) => {
       return;
     }
     // signup should have form to create new user
-    res.render('signup');
+    res.render('homepage');
     res.status(200);
   } catch (err) {
     console.log(err);
