@@ -1,12 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const withAuth = require('../../utils/auth');
-
 // homepage
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    // homepage should have all chirps, with links
+    // homepage should have all chirps and navbar links
     res.render('homepage', {
       logged_in: req.session.logged_in,
     });
@@ -16,9 +14,9 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-// login
+// login page
 router.get('/login', (req, res) => {
-  // If user is logged in, redirect to user profile
+  // if user is logged in, redirect to user profile
   try {
     if (req.session.logged_in) {
       res.redirect(`/users/${req.session.user_id}`);
@@ -33,10 +31,10 @@ router.get('/login', (req, res) => {
   }
 });
 
-// signup
+// signup page
 router.get('/signup', (req, res) => {
   try {
-    // If user is logged in, redirect to user profile
+    // if user is logged in, redirect to user profile
     if (req.session.logged_in) {
       res.redirect(`/users/${req.session.user_id}`);
       return;
