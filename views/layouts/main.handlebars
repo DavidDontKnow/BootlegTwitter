@@ -18,7 +18,16 @@
                     class='rounded d-inline-block align-text-top' />
                 BOOTLEG TWITTER
             </a>
+                <nav>
+                    {{#if logged_in}}
+                    <button id="logout">Logout</button>
+                    {{else}}
+                    <a href="/login">Login</a>
+                    <a href="/signup">Signup</a>
+                    {{/if}}
+                </nav>
         </div>
+        
     </nav>
 
     <main>
@@ -30,4 +39,10 @@
     integrity='sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ'
     crossorigin='anonymous'></script>
 
+{{#if logged_in}}
+<script src="/js/logout.js"></script>
+{{else}}
+<script src="/js/login.js"></script>
+
+{{/if}}
 </html>
