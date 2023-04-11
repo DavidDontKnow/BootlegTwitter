@@ -22,7 +22,6 @@ router.get('/', withAuth, async (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
-
   }
 });
 
@@ -65,18 +64,19 @@ router.get('/signup', (req, res) => {
 // profile page
 router.get('/profile', withAuth, async (req, res) => {
   try {
-    // profile should have user's chirps and navbar links
+    // get all chirps for user
     const chirpData = await Chirp.findAll({
       where: {
         user_id: req.session.user_id,
       },
       include: [{ model: User }],
     });
-    const userData = await User.findByPk(req.session.user_id);
-    const user = userData.get({ plain: true });
-
     // serialize data so the template can read it
     const chirps = chirpData.map((chirp) => chirp.get({ plain: true }));
+    // get user data
+    const userData = await User.findByPk(req.session.user_id);
+    // serialize data so the template can read it
+    const user = userData.get({ plain: true });
 
     res.render('profile', {
       chirps,
