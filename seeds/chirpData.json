@@ -1,23 +1,28 @@
 [
     {
         "id": 1,
-        "content": "First chirp!",
+        "content": "Better than real Twitter! - @FakeElonMusk",
         "user_id": 1
     },
     {
         "id": 2,
-        "content": "Second chirp!",
+        "content": "Will the real Josh Taylor please stand up? - @FakeJoshTaylor",
         "user_id": 2
     },
     {
         "id": 3,
-        "content": "Third chirp!",
+        "content": "Why type many words when few words do trick? - @IvoARealOne",
         "user_id": 3
     },
     {
         "id": 4,
-        "content": "Fourth chirp!",
+        "content": "This for the memes - @DavidG",
         "user_id": 4
+    },
+    {
+        "id": 5,
+        "content": "We seen your code and it ain't as good as ours. - @DavidG",
+        "user_id": 5
     }
 
 ]
