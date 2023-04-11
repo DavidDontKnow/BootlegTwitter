@@ -5,7 +5,7 @@ const { User, Chirp } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all chirps
-router.get('/chirps', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const chirpData = await Chirp.findAll({
       include: [{ model: User }],
@@ -19,10 +19,10 @@ router.get('/chirps', async (req, res) => {
 });
 
 // new chirp
-router.post('/chirps', withAuth, async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const newChirp = await Chirp.create({
-      content: req.body.content,
+      content: req.body.chirp,
       user_id: req.session.user_id,
     });
 
@@ -32,5 +32,28 @@ router.post('/chirps', withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+// delete chirp
+router.delete('/:id', withAuth, async (req, res) => {
+  try {
+    const chirpData = await Chirp.destroy({
+      where: {
+        id: req.params.id,
+        user_id: req.session.user_id,
+      },
+    });
+    
+    if (!chirpData) {
+      res.status(404).json({ message: 'No chirp found with this id!' });
+      return;
+    }
+
+    res.status(200).json(chirpData);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 
 module.exports = router;
