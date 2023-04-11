@@ -39,8 +39,13 @@ router.get('/users/:id', withAuth, async (req, res) => {
     const userData = await User.findByPk(req.params.id, {
       include: [{ model: Chirp }],
     });
+    // serialize data so the template can read it
+    const user = userData.get({ plain: true });
     // profile should display user data based on id
-    res.render('profile');
+    res.render('profile', {
+      user: user,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }
