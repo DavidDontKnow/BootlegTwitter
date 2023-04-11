@@ -52,4 +52,18 @@ router.get('/signup', (req, res) => {
   }
 });
 
+// profile page
+router.get('/profile', withAuth, async (req, res) => {
+  try {
+    // profile should have user's chirps and navbar links
+    res.render('profile', {
+      logged_in: req.session.logged_in,
+    });
+    res.status(200);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
