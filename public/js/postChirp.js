@@ -16,8 +16,7 @@ const newChirp = async (event) => {
       alert(response.statusText);
       }
     }
-  }
-};
+  };
 
 document.querySelector('#chirpForm').addEventListener('submit', newChirp);
 
