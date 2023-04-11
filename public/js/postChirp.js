@@ -14,8 +14,10 @@ const newChirp = async (event) => {
       document.location.replace('/');
     } else {
       alert(response.statusText);
+      }
     }
   }
 };
 
-document.querySelector('#new-form').addEventListener('submit', newChirp);
+document.querySelector('#chirpForm').addEventListener('submit', newChirp);
+
