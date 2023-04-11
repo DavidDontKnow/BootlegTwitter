@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
 router.post('/', withAuth, async (req, res) => {
   try {
     const newChirp = await Chirp.create({
-      content: req.body.content,
+      content: req.body.chirp,
       user_id: req.session.user_id,
     });
 
