@@ -66,7 +66,17 @@ router.get('/signup', (req, res) => {
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // profile should have user's chirps and navbar links
+    const chirpData = await Chirp.findAll({
+      where: {
+        user_id: req.session.user_id,
+      },
+      include: [{ model: User }],
+    });
+    // serialize data so the template can read it
+    const chirps = chirpData.map((chirp) => chirp.get({ plain: true }));
+
     res.render('profile', {
+      chirps,
       logged_in: req.session.logged_in,
     });
     res.status(200);
