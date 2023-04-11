@@ -5,7 +5,7 @@ const { User, Chirp } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // get all chirps
-router.get('/chirps', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
     const chirpData = await Chirp.findAll({
       include: [{ model: User }],
@@ -19,7 +19,7 @@ router.get('/chirps', async (req, res) => {
 });
 
 // new chirp
-router.post('/chirps', withAuth, async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const newChirp = await Chirp.create({
       content: req.body.content,
