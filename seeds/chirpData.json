@@ -22,7 +22,22 @@
     {
         "id": 5,
         "content": "We seen your code and it ain't as good as ours. - @DavidG",
-        "user_id": 5
+        "user_id": 4
+    },
+    {
+        "id": 6,
+        "content": "If Ivo got beef tell him I'm a vegetarian - @ChrisG",
+        "user_id": 1
+    },
+    {
+        "id": 7,
+        "content": "You can tell it's real becuase it looks so fake. - @FakeElonMusk",
+        "user_id": 2
+    },
+    {
+        "id": 8,
+        "conent": "Jeff: yes, Geoff: yeos - @ChrisG",
+        "user_id": 1
     }
 
 ]
