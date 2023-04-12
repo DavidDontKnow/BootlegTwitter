@@ -1,0 +1,11 @@
+#typeWriter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #242323;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
