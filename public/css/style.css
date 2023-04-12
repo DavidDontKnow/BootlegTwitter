@@ -1,25 +1,59 @@
 body {
-   background-color:rgb(237, 237, 243); 
+   background-color:rgb(45, 44, 44); 
 } 
+
+h2 {
+    margin-top: 10px;
+    color: white;
+}
 
 a {
     text-decoration: none; 
-    color: black;
+    color: rgb(255, 255, 255); 
+    margin-right: 3px; 
+    margin-left: 3px;
+
+    
 } 
 
 a:hover {
-    color: yellow; 
+    color: #1DA1F2; 
     text-decoration: none;
 }
 
+form {
+    color: white;
+} 
+
+h1 {
+    color: white;
+} 
+
+#logout {
+    color: white;
+} 
+
+#logout:hover {
+    color: #1DA1F2; 
+} 
+
 #typeWriter {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    color: #242323;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white; 
+    font-size: 25px; 
+} 
+
+.login-btn {
+    border: 0;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #1DA1F2;
+    width: 150px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center; 
+}  
+
+.login-btn:hover {
+    color: #2313f6;
 }
