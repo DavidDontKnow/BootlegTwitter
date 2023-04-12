@@ -7,26 +7,44 @@
   },
   {
     "id": 2,
-    "name": "Harrison Doe",
+    "name": "HarrisonL",
     "email": "email2@email.com",
     "password": "password10"
   },
   {
     "id": 3,
-    "name": "Jazmine Doe",
+    "name": "JazmineG",
     "email": "email3@email.com",
     "password": "password10"
   },
   {
     "id": 4,
-    "name": "David Doe",
+    "name": "DavidG",
     "email": "email4@email.com",
     "password": "password10"
   },
   {
     "id": 5,
-    "name": "Jonathan Doe",
+    "name": "JonathanR",
     "email": "email5@email.com",
+    "password": "password10"
+  },
+  {
+    "id": 6,
+    "name": "FakeJoshTaylor",
+    "email": "email5@email.com",
+    "password": "password10"
+  },
+  {
+    "id": 7,
+    "name": "IvoAReal1",
+    "email": "email6@email.com",
+    "password": "password10"
+  },
+  {
+    "id": 8,
+    "name": "FakeElonMusk",
+    "email": "email7@email.com",
     "password": "password10"
   }
 ]
