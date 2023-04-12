@@ -35,7 +35,8 @@ form {
 } 
 
 h1 {
-    color: white;
+    color: white; 
+    margin-top: 20px;
 } 
 
 .card {
@@ -117,4 +118,5 @@ h1 {
 
 .signup-btn:hover {
     color: rgb(255, 38, 255);
-} 
+}  
+
