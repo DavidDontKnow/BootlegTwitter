@@ -1,0 +1,13 @@
+body {
+   background-color:rgb(237, 237, 243); 
+} 
+
+a {
+    text-decoration: none; 
+    color: black;
+} 
+
+a:hover {
+    color: yellow; 
+    text-decoration: none;
+}
