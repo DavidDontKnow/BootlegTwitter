@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class='navbar navbar-light bg-dark bg-body-tertiary'>
+    <nav class='navbar navbar-light bg-primary bg-body-tertiary'>
         <div class='container-fluid'>
             <a class='navbar-brand' href='#'>
                 <img src='/images/IMG_0037.PNG' alt='Logo' width='30' height='24'
@@ -20,14 +20,16 @@
             </a>
                 <nav>
                     {{#if logged_in}}
-                    <a href="/profile">Profile</a>
-                    <button id="logout">Logout</button>
+                    <a href="/profile">Profile</a> 
+                    <a href="/homepage">The Branch</a> 
+                    <class id="logout">Logout</button>
                     {{else}}
                     <a href="/login">Login</a>
                     <a href="/signup">Signup</a>
                     {{/if}}
                 </nav>
         </div>
+        
         
     </nav>
 
