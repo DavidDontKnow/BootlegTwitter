@@ -4,7 +4,7 @@
 
 A simple Twitter clone that allows users to post chirps, and view chirps from other users. This app uses authentication to allow users to create an account, and login to their account. This app also uses a database to store chirps and user information.
 
-[View deployed HEROKU app here:]()
+[View deployed HEROKU app here:](https://bootleg-twitter.herokuapp.com/)
 
 ![login-page](./public/images/login-page.png)
 
