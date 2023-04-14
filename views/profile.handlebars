@@ -19,7 +19,6 @@
             {{#each chirps as |chirp|}}
             <ul class="list-group text-white list-unstyled">
                 <li class="mb-1">{{chirp.content}}</li>
-                <span>{{format_date chirp.createdAt}}</span>
                 <button id="delete" class="btn btn-outline-danger mb-4">Delete</button>
             </ul>
             {{/each}}
