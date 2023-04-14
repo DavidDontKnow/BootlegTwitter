@@ -5,8 +5,8 @@
       <h1 class='text-center mb-5'>The Branch</h1>
       {{#each chirps as |chirp|}}
         <div class='list-group p-1'>
-          <a href='#' class='list-group-item list-group-item-action'>
-            <p class='mb-1'>@{{user.name}} Chirped... </p>
+          <a href='#' class='list-group-item list-group-item-action bg-dark text-white'>
+            <p class='mb-1 text-primary'>@{{user.name}} Chirped... </p>
             <h6 class='mb-1'>{{chirp.content}}</h6>
           </a>
         </div>

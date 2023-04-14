@@ -74,6 +74,7 @@ h1 {
 
 #typeWriter:hover {
     color: rgb(255, 38, 255);
+    transition: 0.3s;
 }
 
 @keyframes blink-caret {
@@ -95,6 +96,8 @@ h1 {
 
 .login-btn:hover {
     color: rgb(255, 38, 255);
+    background-color: rgb(0, 100, 231);
+    transition: 0.3s;
 } 
 
 .form {
@@ -117,6 +120,8 @@ h1 {
 
 .signup-btn:hover {
     color: rgb(255, 38, 255);
+    background-color: rgb(0, 100, 231);
+    transition: 0.3s;
 }  
 
 /*PROFILE CSS */ 

@@ -1,26 +1,27 @@
 {{ layout/header pageTitle = "Profile"}}
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row justify-content-md-center p-1">
+        <div class="col-md-12 mb-5">
             <h1 class="text-center">Welcome {{user.name}}</h1>
         </div>
-    <div class="row">
-        <div class="col-md-6">
+    <div class="row justify-content-md-center p-1">
+        <div class="col-md-auto mr-5">
             <h2>Create a new Chirp</h2>
             <form id="chirpForm">
                 <div class="form-group">
-                    <textarea name="chirp" id="chirp" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="chirp" id="chirp" cols="30" rows="10" class="form-control bg-dark text-white"></textarea>
                 </div>
                 <button type="submit" class="post">Post</button>
             </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-auto ml-5">
             <h2>Your Chirps</h2>
-            <ul class="list-group">
             {{#each chirps as |chirp|}}
-                <ul class="list-group-item list-group-item">{{chirp.content}}</ul> <button id="delete">Delete</button>
-            {{/each}}
+            <ul class="list-group text-white list-unstyled">
+                <li class="mb-1">{{chirp.content}}</li>
+                <button id="delete" class="btn btn-outline-danger mb-4">Delete</button>
             </ul>
+            {{/each}}
 
 
 
