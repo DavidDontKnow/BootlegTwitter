@@ -11,4 +11,5 @@ const deletHandler = async (event) => {
             alert(response.statusText);
         }
     }
-}
+};
+
