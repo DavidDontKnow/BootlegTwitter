@@ -41,7 +41,6 @@ h1 {
 
 .card {
     color: rgb(45, 44, 44); 
-    margin-left: 40px;
 
 }
 
@@ -120,3 +119,80 @@ h1 {
     color: rgb(255, 38, 255);
 }  
 
+/*PROFILE CSS */ 
+
+.post {
+    border: 0;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #1DA1F2;
+    width: 150px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center; 
+}  
+
+.post:hover {
+    color: rgb(255, 38, 255);
+}  
+
+#delete {
+    border: 0;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: #1DA1F2;
+    width: 150px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;  
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 100px;
+}  
+
+#delete:hover {
+    color: rgb(255, 38, 255);
+} 
+
+.list-group {
+    color: black; 
+    list-style-type: none; 
+    font-size: 20px; 
+    margin-bottom: 50px; 
+    margin-top: 50px; 
+
+} 
+
+.chirp.content {
+    margin-bottom: 30px;
+} 
+
+/* Carousel */ 
+
+.carousel {
+    width:840px;
+    height:560px;  
+    z-index: -1;
+  } 
+
+  .carousel-control-prev {
+    background-color: rgb(45, 44, 44); 
+  } 
+
+  .hello-chirp {
+    color: white; 
+    font-size:30px; 
+    margin-top: 10px;
+  } 
+
+  b {
+    color: #1DA1F2;
+  } 
+
+  .bt-chirp {
+    color: white; 
+    font-size:30px; 
+    margin-top: 10px;
+  } 
