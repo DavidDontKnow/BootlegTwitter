@@ -24,7 +24,6 @@ router.post('/', withAuth, async (req, res) => {
     const newChirp = await Chirp.create({
       content: req.body.chirp,
       user_id: req.session.user_id,
-
     });
 
     res.status(200).json(newChirp);
